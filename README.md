@@ -1,45 +1,70 @@
 # Welcome to GitHub Desktop!
 
-This is your README. READMEs are where you can communicate what your project is and how to use it.
+# Power BI Student & Lead Analytics Dashboard
 
-Write your name on line 6, save it, and then head back to GitHub Desktop.
-## Student & Lead Analytics — Power BI
+A Power BI analytics project built from 3 months of student, trainer, course, lead, and platform data. The project transforms raw Excel data into a structured star-schema model and provides interactive dashboards for monitoring student enrollment, leads, conversions, courses, sources, trainers, and batches.
 
-This project transforms fragmented education-platform data into a unified business intelligence solution using **Power BI, Excel, Power Query, and DAX**.
+## Key Features
 
-The dataset represents three months of operational activity across students, courses, trainers, batches, marketing sources, leads, and platform registrations. Instead of treating each dataset independently, the project connects them through a structured **star-schema data model**, creating a single analytical view of the student acquisition and enrollment journey.
+* Cleaned and validated 3 months of business data.
+* Created a Power BI-friendly star schema.
+* Built dimension tables for:
 
-The solution combines **7,600+ student records, trainer and batch information, daily lead activity, course-level registrations, and marketing-source data** into an interactive reporting environment.
+  * Date
+  * Course
+  * Source
+  * Trainer
+  * Batch
+  * Student
+* Built fact tables for:
 
-### What the project delivers
+  * Student enrollment
+  * Leads
+  * Platform joins
+* Added validated relationships between dimensions and fact tables.
+* Created DAX measures for:
 
-* Designed a scalable **Power BI star schema** with fact and dimension tables.
-* Cleaned, transformed, and validated multiple Excel datasets.
-* Established relationships between students, courses, trainers, batches, dates, and lead sources.
-* Developed reusable **DAX measures** for leads, interested prospects, joined students, enrollment, and conversion rates.
-* Built interactive report pages for:
+  * Total Students
+  * Total Leads
+  * Total Interested
+  * Total Not Interested
+  * Total Joined
+  * Platform Joined
+  * Conversion Rate
+* Added a detailed Date, Course, Source, and Trainer table.
+* Designed interactive Power BI report pages:
 
-  * **Executive Overview** — high-level business performance
-  * **Course Analysis** — course-wise enrollment and conversion analysis
-  * **Trainer & Batch Analysis** — trainer and batch-level activity
-  * **Detailed Data** — granular date, course, source, and trainer information
-* Added slicers and cross-filtering to allow users to explore the data dynamically.
-* Validated relationships and key business metrics to maintain consistency across the model.
+  * Executive Overview
+  * Course Analysis
+  * Trainer & Batch Analysis
+  * Detailed Data
 
-### Business Perspective
+## Dashboard Analysis
 
-The project is designed to answer practical questions such as:
+The dashboard provides insights into:
 
-* How many leads were generated during the period?
-* How many prospects showed interest?
-* How many students joined?
-* How does enrollment vary across courses?
-* Which marketing sources contributed to platform registrations?
-* How does student activity relate to trainers and batches?
-* How do lead and joining trends change over time?
+* Overall lead and student performance
+* Lead-to-joining conversion
+* Student distribution by course
+* Joined students by source
+* Course-level performance
+* Trainer and batch performance
+* Daily trends across the 3-month period
+* Detailed course, source, trainer, and date analysis
 
-Rather than being only a visualization project, this solution demonstrates the complete **data-to-insight workflow** — from raw Excel datasets and data modeling to transformation, DAX calculations, validation, and interactive business reporting.
+## Data Model
 
-### Technology Stack
+The project follows a **star-schema architecture**, with dimension tables connected to the corresponding fact tables. Single-direction relationships are used to maintain a clean and reliable data model.
 
-**Power BI | Power Query | DAX | Microsoft Excel | Data Modeling | Star Schema**
+## Tools Used
+
+* Microsoft Excel
+* Power BI Desktop
+* Power Query
+* DAX
+* Data Modeling
+
+## Project Outcome
+
+The project converts multiple Excel datasets into an interactive business intelligence solution that can be used to analyze student enrollment, lead generation, course performance, marketing sources, and trainer/batch activity.
+
